@@ -525,8 +525,10 @@ const playBtn = document.getElementById('playBtn');
 const PLAY_ICO = '<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 2l9 5-9 5V2z" fill="#F3EFE7"/></svg>';
 const PAUSE_ICO = '<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="2" y="2" width="4" height="10" rx="1" fill="#F3EFE7"/><rect x="8" y="2" width="4" height="10" rx="1" fill="#F3EFE7"/></svg>';
 let playing = false;
-fetch('audio/episode.json').then(r=>r.json()).then(d=>{
+fetch('audio/episode.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
   if(d.title) document.getElementById('podLabel').textContent = d.title;
+  // Cache-bust the episode so GitHub's CDN can't serve a stale latest.mp3.
+  audio.src = 'audio/latest.mp3?v=' + encodeURIComponent(d.date || Date.now());
 }).catch(()=>{});
 playBtn.addEventListener('click',()=>{
   if(playing){audio.pause();playing=false;playBtn.innerHTML=PLAY_ICO;}
