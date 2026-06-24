@@ -129,6 +129,8 @@ em.tag{font-family:'Fraunces',serif;font-style:italic;font-weight:300;color:var(
 
 /* reading */
 .reading-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:40px}
+.reading-cat{font-size:12px;text-transform:uppercase;letter-spacing:.09em;font-weight:500;color:var(--green);margin-top:38px}
+.reading-cat + .reading-grid{margin-top:14px}
 @media(max-width:560px){.reading-grid{grid-template-columns:1fr}}
 .reading-item{padding:22px 0;border-bottom:1px solid var(--hair)}
 .reading-item:nth-child(odd){padding-right:40px}
@@ -427,39 +429,43 @@ em.tag{font-family:'Fraunces',serif;font-style:italic;font-weight:300;color:var(
 <section class="section" id="reading">
   <div class="wrap">
     <div class="kicker reveal">What I'm reading</div>
-    <h2 class="section-head reveal">Newsletters worth subscribing to</h2>
-    <p class="section-sub reveal">The writers shaping how I think about product, strategy and leadership.</p>
+    <h2 class="section-head reveal">Articles worth your time</h2>
+    <p class="section-sub reveal">Standout individual pieces on product, supply chain tech and leadership.</p>
 
+    <div class="reading-cat reveal">Product</div>
     <div class="reading-grid">
       <div class="reading-item reveal">
-        <div class="r-title"><a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener">Lenny's Newsletter</a></div>
-        <div class="r-author">Lenny Rachitsky · Substack · Product Management</div>
-        <p class="r-why">The canonical PM source. Every issue is a masterclass in thinking about growth, hiring and product decisions at scale.</p>
+        <div class="r-title"><a href="https://www.productcompass.pm/p/loop-engineering-for-pms" target="_blank" rel="noopener">Loop Engineering for PMs: 20+ AI Agent Loops</a></div>
+        <div class="r-author">Paweł Huryn · The Product Compass</div>
+        <p class="r-why">A practical breakdown of agent loops a PM can run this week, and how to define what "done" means so they stop on their own.</p>
       </div>
       <div class="reading-item reveal">
-        <div class="r-title"><a href="https://medium.com/@johnpcutler" target="_blank" rel="noopener">John Cutler</a></div>
-        <div class="r-author">John Cutler · Medium · Product Management</div>
-        <p class="r-why">Original systems thinking for product people. His frameworks for complexity and team health map directly to how I approach hard problems.</p>
+        <div class="r-title"><a href="https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code" target="_blank" rel="noopener">Everyone Should Be Using Claude Code More</a></div>
+        <div class="r-author">Lenny Rachitsky · Lenny's Newsletter</div>
+        <p class="r-why">Fifty ways non-technical people put Claude Code to work. It is why I stopped thinking of it as a coding tool.</p>
+      </div>
+    </div>
+
+    <div class="reading-cat reveal">Supply Chain Tech</div>
+    <div class="reading-grid">
+      <div class="reading-item reveal">
+        <div class="r-title"><a href="https://cathyroberson.substack.com/p/last-mile-technology-comes-of-age" target="_blank" rel="noopener">Last-Mile Technology Comes of Age</a></div>
+        <div class="r-author">Cathy Roberson · Rethinking Supply Chains</div>
+        <p class="r-why">How last-mile carriers and delivery platforms are reshaping parcel logistics. The operational side of the problems I want to build for.</p>
+      </div>
+    </div>
+
+    <div class="reading-cat reveal">Leadership</div>
+    <div class="reading-grid">
+      <div class="reading-item reveal">
+        <div class="r-title"><a href="https://ixcarus.substack.com/p/neuroplasticity-rewiring-your-brain" target="_blank" rel="noopener">Neuroplasticity: Rewiring Your Brain to Do Hard Things</a></div>
+        <div class="r-author">ixcarus · The Forbidden Files</div>
+        <p class="r-why">Why lasting change is neurological rather than a matter of willpower, and what that means for building hard habits.</p>
       </div>
       <div class="reading-item reveal">
-        <div class="r-title"><a href="https://supplychainin5.substack.com/" target="_blank" rel="noopener">Supply Chain in 5</a></div>
-        <div class="r-author">Substack · Supply Chain</div>
-        <p class="r-why">Senior-leader reads on supply chain strategy and technology — keeps me grounded in the operational side of the problems I want to solve.</p>
-      </div>
-      <div class="reading-item reveal">
-        <div class="r-title"><a href="https://thoughtsparks.substack.com/" target="_blank" rel="noopener">Thought Sparks</a></div>
-        <div class="r-author">Rita McGrath · Substack · Strategy</div>
-        <p class="r-why">Columbia Business School's sharpest voice on strategy and innovation. The most academically rigorous thing in my inbox.</p>
-      </div>
-      <div class="reading-item reveal">
-        <div class="r-title"><a href="https://admiredleadership.substack.com/" target="_blank" rel="noopener">Admired Leadership Field Notes</a></div>
-        <div class="r-author">Substack · Leadership</div>
-        <p class="r-why">Short, practical, and consistently the most useful leadership writing I read each week.</p>
-      </div>
-      <div class="reading-item reveal">
-        <div class="r-title"><a href="https://inconfidencepod.substack.com/" target="_blank" rel="noopener">How To Own the Room</a></div>
-        <div class="r-author">Viv Groskop · Substack · Speaking &amp; Presence</div>
-        <p class="r-why">On showing up with authority in high-stakes rooms. Essential for anyone who wants to be taken seriously before they've earned every credential.</p>
+        <div class="r-title"><a href="https://levelupwithethanevans.substack.com/p/why-public-speaking-is-no-longer" target="_blank" rel="noopener">Why Public Speaking Is No Longer Optional</a></div>
+        <div class="r-author">Lorraine K. Lee · Level Up</div>
+        <p class="r-why">Public speaking as a learnable career skill, with simple frameworks for impromptu answers and the exec room.</p>
       </div>
     </div>
   </div>
