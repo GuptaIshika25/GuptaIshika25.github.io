@@ -120,7 +120,7 @@ a{color:inherit;text-decoration:none}
   <div class="wrap">
     <div class="kicker">Featured work · AI systems</div>
     <h1 class="hero-title">AI Newsroom: an agentic system that writes and narrates a daily news brief on its own</h1>
-    <p class="hero-sub">A multi-agent system built solo on the Claude Agent SDK. It scouts the day's AI news, fact-checks itself, narrates an episode and emails it — free, on a schedule, with no server.</p>
+    <p class="hero-sub">A multi-agent system built solo on the Claude Agent SDK. It scouts the day's AI news, fact-checks itself, narrates an episode and emails it. It runs free, on a schedule, with no server.</p>
 
     <div class="hero-meta">
       <div class="meta-item">
@@ -231,7 +231,7 @@ a{color:inherit;text-decoration:none}
       </div>
       <div class="agent-row highlight">
         <div class="agent-role">Fact-checker</div>
-        <div class="agent-desc">Checks every draft against its source. Can reject the Writer's work and demand a second pass — the loop that makes the output trustworthy enough to actually send.</div>
+        <div class="agent-desc">Checks every draft against its source. It can reject the Writer's work and demand a second pass. That loop is what makes the output trustworthy enough to actually send.</div>
       </div>
       <div class="agent-row">
         <div class="agent-role">Producer</div>
@@ -245,7 +245,7 @@ a{color:inherit;text-decoration:none}
 
     <p>What makes this a real agentic AI system and not a pipeline wearing the label: the agents make decisions, they call tools, and there's a critique-and-revise loop. The Fact-checker can reject the Writer's work and demand a second pass. That loop is what makes the output trustworthy enough to actually send.</p>
 
-    <p>It produces a real artifact every day — a formatted brief plus a narrated audio episode, delivered by email and scheduled free on GitHub Actions.</p>
+    <p>It produces a real artifact every day. A formatted brief plus a narrated audio episode, delivered by email and scheduled free on GitHub Actions.</p>
 
     <hr class="section-divider">
 
@@ -253,16 +253,16 @@ a{color:inherit;text-decoration:none}
     <p>The AI was the easy part. Scout, Editor, Writer and Fact-checker worked early and worked well. Every real fight was in the glue around the model.</p>
 
     <div class="callout">
-      <p><strong>The pattern is the lesson.</strong> Almost none of these were the agent logic. The model was the easy twenty percent. The plumbing — cloud quirks, silent failures, file formats — was the other eighty. That's the real story of shipping an AI product, and it's the part tutorials never show.</p>
+      <p><strong>The pattern is the lesson.</strong> Almost none of these were the agent logic. The model was the easy twenty percent. The plumbing was the other eighty: cloud quirks, silent failures, file formats. That's the real story of shipping an AI product, and it's the part tutorials never show.</p>
     </div>
 
     <div class="broke-item">
       <div class="broke-title">The free voice that worked on my Mac died in the cloud</div>
-      <div class="broke-desc">Microsoft blocks its free edge-tts voice from datacenter IPs — GitHub's servers got a 403. I moved the whole audio stage to Gemini TTS and traded the Ava voice for Zephyr.</div>
+      <div class="broke-desc">Microsoft blocks its free edge-tts voice from datacenter IPs, so GitHub's servers were turned away with a 403 error. I moved the whole audio stage to Gemini TTS and traded the Ava voice for Zephyr.</div>
     </div>
     <div class="broke-item">
       <div class="broke-title">A run reported success and sent nothing</div>
-      <div class="broke-desc">The code was swallowing errors and exiting clean even when a stage failed. I rebuilt the error handling so a real failure shows a red X — because a pipeline you can't trust is worse than no pipeline.</div>
+      <div class="broke-desc">The code was swallowing errors and exiting clean even when a stage failed. I rebuilt the error handling so a real failure shows a red X, because a pipeline you can't trust is worse than no pipeline.</div>
     </div>
     <div class="broke-item">
       <div class="broke-title">A WAV vs MP3 mismatch</div>
@@ -273,13 +273,13 @@ a{color:inherit;text-decoration:none}
 
     <h2>The product judgment behind it</h2>
     <p>A daily AI brief is a crowded category, and being honest about that is part of the work. In May 2026 Spotify shipped the generic version: personalized daily audio briefings, with distribution no solo project can match. That could have killed the idea. Instead it sharpened it.</p>
-    <p>Once a platform commoditizes the generic version of a feature, you don't win on the generic version. You win by going narrower and deeper than a horizontal tool ever will. I also named the assumption most likely to kill the product — that people will give up their commute music for a work brief — and designed a small two-week pilot with real users to check it, with the success and failure criteria set in advance so I couldn't move the goalposts.</p>
+    <p>Once a platform commoditizes the generic version of a feature, you don't win on the generic version. You win by going narrower and deeper than a horizontal tool ever will. I also named the assumption most likely to kill the product, that people will give up their commute music for a work brief, and designed a small two-week pilot with real users to check it, with the success and failure criteria set in advance so I couldn't move the goalposts.</p>
 
     <hr class="section-divider">
 
     <h2>What I learned, and what's next</h2>
     <p>The sharpest lesson was about where to be brave. In a crowded market the brave move isn't a flashier feature. It's narrowing hard enough that a horizontal tool can't follow, and being willing to let a small pilot kill the idea before you over-invest.</p>
-    <p><strong>What's next:</strong> run that pilot for real. Pick one profession and go deep. Publish the podcast where people already listen — Spotify, Apple Music, YouTube. And A/B test what actually drives listening: length, voice, send time.</p>
+    <p><strong>What's next:</strong> run that pilot for real. Pick one profession and go deep. Publish the podcast where people already listen: Spotify, Apple Music, YouTube. And A/B test what actually drives listening: length, voice, send time.</p>
 
     <div class="btn-row" style="margin-top:48px">
       <a href="https://github.com/GuptaIshika25/ai-newsroom" target="_blank" rel="noopener" class="btn btn-primary">Build your own → GitHub</a>
@@ -297,7 +297,7 @@ a{color:inherit;text-decoration:none}
       <a href="https://www.linkedin.com/in/ishika-gupta/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/GuptaIshika25" target="_blank" rel="noopener">GitHub</a>
     </div>
-    <div class="footer-copy">© 2025 Ishika Gupta</div>
+    <div class="footer-copy">© 2026 Ishika Gupta</div>
   </div>
 </footer>
 
